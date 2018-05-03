@@ -1,0 +1,1854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ab1da69-9256-4df6-ae3e-711fd93ae62e" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#ClientController#0;class#ClientController#0" />
+                <element signature="method#run#0;class#ClientController#0" />
+                <element signature="method#update#0;class#ClientController#0" />
+                <element signature="method#handleMessage#0;class#ClientController#0" />
+                <element signature="method#handleMessage#1;class#ClientController#0" />
+                <element signature="method#handleMessage#2;class#ClientController#0" />
+                <element signature="method#handleMessage#3;class#ClientController#0" />
+                <element signature="method#handleMessage#4;class#ClientController#0" />
+                <element signature="method#handleMessage#5;class#ClientController#0" />
+                <element signature="method#stopIt#0;class#ClientController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/models.Admin" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/models.Admin">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>models.Admin</OriginalElement>
+              <nodes>
+                <node x="256.45833333333337" y="0.0">java.util.Observer</node>
+                <node x="715.16733276644" y="0.0">models.Admin</node>
+                <node x="701.125" y="80.0">repos.AdminRepo</node>
+                <node x="534.4411422902496" y="220.0">workers.InputWorker</node>
+                <node x="390.44114229024956" y="220.0">workers.OutputWorker</node>
+                <node x="572.125" y="80.0">messages.Message</node>
+                <node x="69.98886054421774" y="0.0">models.Article</node>
+                <node x="424.79166666666674" y="440.0">controller.ClientsManager</node>
+                <node x="7.833333333333371" y="80.0">repos.ArticleRepo</node>
+                <node x="424.29166666666674" y="350.0">controller.ClientController</node>
+                <node x="412.3715277777777" y="80.0">java.lang.Thread</node>
+                <node x="65.33333333333337" y="220.0">services.ArticlesService</node>
+                <node x="672.625" y="220.0">services.AdminsService</node>
+                <node x="413.16666666666674" y="520.0">workers.SocketServer</node>
+                <node x="230.33333333333337" y="80.0">java.util.Observable</node>
+                <node x="461.91666666666674" y="610.0">Main</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="workers.InputWorker" target="controller.ClientController">
+                  <point x="42.75" y="15.0" />
+                  <point x="634.1911422902496" y="300.0" />
+                  <point x="525.4916666666668" y="300.0" />
+                  <point x="35.19999999999999" y="-15.0" />
+                </edge>
+                <edge source="java.util.Observer" target="java.util.Observable">
+                  <point x="11.875" y="15.0" />
+                  <point x="315.83333333333337" y="55.0" />
+                  <point x="319.5" y="55.0" />
+                  <point x="35.66666666666663" y="-15.0" />
+                </edge>
+                <edge source="workers.OutputWorker" target="controller.ClientController">
+                  <point x="41.33333333333334" y="15.0" />
+                  <point x="493.77447562358293" y="330.0" />
+                  <point x="490.29166666666674" y="330.0" />
+                  <point x="0.0" y="-15.0" />
+                </edge>
+                <edge source="controller.ClientController" target="services.AdminsService">
+                  <point x="52.80000000000001" y="-15.0" />
+                  <point x="543.0916666666667" y="320.0" />
+                  <point x="685.225" y="320.0" />
+                  <point x="-50.4" y="15.0" />
+                </edge>
+                <edge source="controller.ClientController" target="workers.InputWorker">
+                  <point x="17.600000000000023" y="-15.0" />
+                  <point x="507.89166666666677" y="280.0" />
+                  <point x="577.1911422902496" y="280.0" />
+                  <point x="-14.25" y="15.0" />
+                </edge>
+                <edge source="controller.ClientController" target="messages.Message">
+                  <point x="44.0" y="-15.0" />
+                  <point x="534.2916666666667" y="310.0" />
+                  <point x="662.125" y="310.0" />
+                  <point x="662.125" y="200.0" />
+                  <point x="654.375" y="200.0" />
+                  <point x="35.25" y="15.0" />
+                </edge>
+                <edge source="java.util.Observable" target="java.util.Observable">
+                  <point x="-40.125" y="15.0" />
+                  <point x="243.70833333333337" y="130.0" />
+                  <point x="210.33333333333337" y="130.0" />
+                  <point x="210.33333333333337" y="95.0" />
+                  <point x="-53.5" y="-0.0" />
+                </edge>
+                <edge source="Main" target="services.AdminsService">
+                  <point x="21.428571428571445" y="-15.0" />
+                  <point x="520.8452380952382" y="580.0" />
+                  <point x="774.8339994331068" y="580.0" />
+                  <point x="774.8339994331068" y="330.0" />
+                  <point x="786.0250000000001" y="330.0" />
+                  <point x="50.400000000000034" y="15.0" />
+                </edge>
+                <edge source="controller.ClientController" target="models.Article">
+                  <point x="-44.0" y="-15.0" />
+                  <point x="446.29166666666674" y="310.0" />
+                  <point x="199.83333333333337" y="310.0" />
+                  <point x="199.83333333333337" y="55.0" />
+                  <point x="141.73886054421774" y="55.0" />
+                  <point x="30.75" y="15.0" />
+                </edge>
+                <edge source="workers.OutputWorker" target="messages.Message">
+                  <point x="15.499999999999972" y="-15.0" />
+                  <point x="467.94114229024956" y="190.0" />
+                  <point x="583.875" y="190.0" />
+                  <point x="-35.25" y="15.0" />
+                </edge>
+                <edge source="controller.ClientsManager" target="controller.ClientController">
+                  <point x="18.714285714285722" y="-15.0" />
+                  <point x="509.00595238095246" y="400.0" />
+                  <point x="534.2916666666667" y="400.0" />
+                  <point x="44.0" y="15.0" />
+                </edge>
+                <edge source="controller.ClientController" target="java.util.Observer">
+                  <point x="-26.399999999999977" y="-15.0" />
+                  <point x="463.89166666666677" y="290.0" />
+                  <point x="347.83333333333337" y="290.0" />
+                  <point x="347.83333333333337" y="55.0" />
+                  <point x="339.58333333333337" y="55.0" />
+                  <point x="35.625" y="15.0" />
+                </edge>
+                <edge source="controller.ClientsManager" target="services.AdminsService">
+                  <point x="56.14285714285717" y="-15.0" />
+                  <point x="546.4345238095239" y="420.0" />
+                  <point x="760.825" y="420.0" />
+                  <point x="25.19999999999999" y="15.0" />
+                </edge>
+                <edge source="repos.AdminRepo" target="models.Admin">
+                  <point x="-27.75" y="-15.0" />
+                  <point x="728.875" y="55.0" />
+                  <point x="736.16733276644" y="55.0" />
+                  <point x="-21.0" y="15.0" />
+                </edge>
+                <edge source="Main" target="controller.ClientsManager">
+                  <point x="10.714285714285722" y="-15.0" />
+                  <point x="510.13095238095246" y="570.0" />
+                  <point x="538.6666666666667" y="570.0" />
+                  <point x="538.6666666666667" y="495.0" />
+                  <point x="533.9583333333334" y="495.0" />
+                  <point x="43.66666666666663" y="15.0" />
+                </edge>
+                <edge source="controller.ClientController" target="workers.OutputWorker">
+                  <point x="-17.599999999999966" y="-15.0" />
+                  <point x="472.6916666666668" y="280.0" />
+                  <point x="411.1078089569162" y="280.0" />
+                  <point x="-41.33333333333334" y="15.0" />
+                </edge>
+                <edge source="Main" target="services.ArticlesService">
+                  <point x="-21.428571428571445" y="-15.0" />
+                  <point x="477.9880952380953" y="580.0" />
+                  <point x="85.67867063492059" y="580.0" />
+                  <point x="84.42867063492059" y="236.25" />
+                  <point x="77.73333333333335" y="240.0" />
+                  <point x="-49.60000000000002" y="15.0" />
+                </edge>
+                <edge source="services.ArticlesService" target="repos.ArticleRepo">
+                  <point x="-49.60000000000002" y="-15.0" />
+                  <point x="77.73333333333335" y="200.0" />
+                  <point x="62.33333333333337" y="200.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="workers.OutputWorker" target="java.lang.Thread">
+                  <point x="-46.50000000000003" y="-15.0" />
+                  <point x="405.94114229024956" y="170.0" />
+                  <point x="461.9548611111111" y="170.0" />
+                  <point x="7.083333333333343" y="15.0" />
+                </edge>
+                <edge source="workers.InputWorker" target="messages.Message">
+                  <point x="28.5" y="-15.0" />
+                  <point x="619.9411422902496" y="200.0" />
+                  <point x="630.875" y="200.0" />
+                  <point x="11.75" y="15.0" />
+                </edge>
+                <edge source="services.AdminsService" target="repos.AdminRepo">
+                  <point x="-31.5" y="-15.0" />
+                  <point x="704.125" y="200.0" />
+                  <point x="719.625" y="200.0" />
+                  <point x="-37.0" y="15.0" />
+                </edge>
+                <edge source="controller.ClientsManager" target="services.ArticlesService">
+                  <point x="-37.42857142857139" y="-15.0" />
+                  <point x="452.86309523809535" y="410.0" />
+                  <point x="129.78333333333336" y="407.5" />
+                  <point x="123.53333333333336" y="236.25" />
+                  <point x="132.33333333333337" y="233.75" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="workers.InputWorker" target="java.lang.Thread">
+                  <point x="-28.5" y="-15.0" />
+                  <point x="562.9411422902496" y="180.0" />
+                  <point x="490.28819444444446" y="180.0" />
+                  <point x="35.416666666666714" y="15.0" />
+                </edge>
+                <edge source="controller.ClientController" target="services.ArticlesService">
+                  <point x="-61.599999999999966" y="-15.0" />
+                  <point x="428.6916666666668" y="330.0" />
+                  <point x="152.13333333333333" y="330.0" />
+                  <point x="24.799999999999955" y="15.0" />
+                </edge>
+                <edge source="Main" target="workers.SocketServer">
+                  <point x="-10.714285714285722" y="-15.0" />
+                  <point x="488.702380952381" y="570.0" />
+                  <point x="441.91666666666674" y="570.0" />
+                  <point x="-28.75" y="15.0" />
+                </edge>
+                <edge source="services.ArticlesService" target="java.util.Observable">
+                  <point x="24.799999999999955" y="-15.0" />
+                  <point x="152.13333333333333" y="190.0" />
+                  <point x="270.45833333333337" y="190.0" />
+                  <point x="-13.375" y="15.0" />
+                </edge>
+                <edge source="java.util.Observable" target="java.util.Observer">
+                  <point x="0.0" y="-15.0" />
+                  <point x="283.83333333333337" y="55.0" />
+                  <point x="292.08333333333337" y="55.0" />
+                  <point x="-11.875" y="15.0" />
+                </edge>
+                <edge source="Main" target="repos.ArticleRepo">
+                  <point x="-32.14285714285717" y="-15.0" />
+                  <point x="467.2738095238096" y="590.0" />
+                  <point x="26.0" y="590.0" />
+                  <point x="-36.33333333333337" y="15.0" />
+                </edge>
+                <edge source="workers.SocketServer" target="controller.ClientsManager">
+                  <point x="28.75" y="-15.0" />
+                  <point x="499.41666666666674" y="495.0" />
+                  <point x="490.29166666666674" y="495.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="services.ArticlesService" target="models.Article">
+                  <point x="0.0" y="-15.0" />
+                  <point x="127.33333333333337" y="55.0" />
+                  <point x="121.23886054421774" y="55.0" />
+                  <point x="10.25" y="15.0" />
+                </edge>
+                <edge source="java.lang.Thread" target="java.lang.Thread">
+                  <point x="-21.25" y="15.0" />
+                  <point x="433.6215277777777" y="140.0" />
+                  <point x="382.3715277777777" y="140.0" />
+                  <point x="382.3715277777777" y="95.0" />
+                  <point x="-42.5" y="-0.0" />
+                </edge>
+                <edge source="controller.ClientController" target="java.util.Observable">
+                  <point x="-35.19999999999999" y="-15.0" />
+                  <point x="455.09166666666675" y="300.0" />
+                  <point x="306.35364229024947" y="300.0" />
+                  <point x="306.35364229024947" y="200.0" />
+                  <point x="323.95833333333337" y="200.0" />
+                  <point x="40.125" y="15.0" />
+                </edge>
+                <edge source="Main" target="repos.AdminRepo">
+                  <point x="32.14285714285711" y="-15.0" />
+                  <point x="531.5595238095239" y="590.0" />
+                  <point x="809.125" y="590.0" />
+                  <point x="809.125" y="200.0" />
+                  <point x="793.625" y="200.0" />
+                  <point x="37.0" y="15.0" />
+                </edge>
+                <edge source="repos.ArticleRepo" target="models.Article">
+                  <point x="27.25" y="-15.0" />
+                  <point x="89.58333333333337" y="55.0" />
+                  <point x="100.73886054421774" y="55.0" />
+                  <point x="-10.25" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.8" x="138.12499999999977" y="313.125" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>validate</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\rat_g\.gradle\wrapper\dists\gradle-4.4-all\9br9xq1tocpiv8o6njlyu5op1\gradle-4.4" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.4" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="serverdemo" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="serverdemo" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'serverdemo'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'serverdemo'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'serverdemo'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'serverdemo'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'serverdemo'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'serverdemo'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'serverdemo'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'serverdemo'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'serverdemo'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6099988619235" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="419047526" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2083459160" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="3722923670" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="serverdemo" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/ant-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/ant-launcher-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-base-services-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-base-services-groovy-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-build-cache-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-build-option-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-cli-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-core-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-core-api-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-docs-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-installation-beacon-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-jvm-services-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-kotlin-dsl-0.13.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-kotlin-dsl-tooling-builders-0.13.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-kotlin-dsl-tooling-models-0.13.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-launcher-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-logging-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-messaging-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-model-core-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-model-groovy-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-native-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-persistent-cache-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-process-services-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-resources-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-runtime-api-info-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-tooling-api-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-wrapper-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-announce-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-antlr-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-build-cache-http-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-build-comparison-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-build-init-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-code-quality-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-composite-builds-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-dependency-management-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-diagnostics-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ear-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ide-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ide-native-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ide-play-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ivy-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-jacoco-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-javascript-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-groovy-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-java-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-jvm-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-native-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-scala-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-maven-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-osgi-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-base-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-jvm-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-native-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-play-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-plugin-development-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-plugin-use-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-plugins-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-publish-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-reporting-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-gcs-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-http-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-s3-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-sftp-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-scala-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-signing-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-test-kit-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-testing-base-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-testing-jvm-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-testing-native-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-tooling-api-builders-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-version-control-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-workers-4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main/main.java" />
+        <option value="$PROJECT_DIR$/src/main.java" />
+        <option value="$PROJECT_DIR$/src/MAIN.java" />
+        <option value="$PROJECT_DIR$/src/Model.java" />
+        <option value="$PROJECT_DIR$/src/SocketServer.java" />
+        <option value="$PROJECT_DIR$/src/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/src/AriticlesService.java" />
+        <option value="$PROJECT_DIR$/src/ClientThread.java" />
+        <option value="$PROJECT_DIR$/src/ClientThreadsManager.java" />
+        <option value="$PROJECT_DIR$/src/ClientsManager.java" />
+        <option value="$PROJECT_DIR$/src/OutputWorker.java" />
+        <option value="$PROJECT_DIR$/src/ArticleRepo.java" />
+        <option value="$PROJECT_DIR$/src/ArticlesService.java" />
+        <option value="$PROJECT_DIR$/src/Article.java" />
+        <option value="$PROJECT_DIR$/src/ClientWorker.java" />
+        <option value="$PROJECT_DIR$/src/JsonSerializer.java" />
+        <option value="$PROJECT_DIR$/src/ArticlesJsonSerializer.java" />
+        <option value="$PROJECT_DIR$/src/Message.java" />
+        <option value="$PROJECT_DIR$/src/InputWorker.java" />
+        <option value="$PROJECT_DIR$/src/controller/AdminsRepo.java" />
+        <option value="$PROJECT_DIR$/src/messages/ListArticlesRequest.java" />
+        <option value="$PROJECT_DIR$/src/workers/ClientWorker.java" />
+        <option value="$PROJECT_DIR$/src/workers/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/messages/ListArticlesResponse.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/messages/InsertArticleRequest.java" />
+        <option value="$PROJECT_DIR$/src/messages/InsertArticleResponse.java" />
+        <option value="$PROJECT_DIR$/src/messages/NotAuthenticatedResponse.java" />
+        <option value="$PROJECT_DIR$/src/messages/DeleteArticleRequest.java" />
+        <option value="$PROJECT_DIR$/src/messages/AuthenticationRequest.java" />
+        <option value="$PROJECT_DIR$/src/services/AdminsService.java" />
+        <option value="$PROJECT_DIR$/src/repos/AdminRepo.java" />
+        <option value="$PROJECT_DIR$/src/messages/UpdateArticleRequest.java" />
+        <option value="$PROJECT_DIR$/src/models/Admin.java" />
+        <option value="$PROJECT_DIR$/src/workers/InputWorker.java" />
+        <option value="$PROJECT_DIR$/src/messages/AuthenticatedResponse.java" />
+        <option value="$PROJECT_DIR$/src/repos/ArticleRepo.java" />
+        <option value="$PROJECT_DIR$/src/services/ArticlesService.java" />
+        <option value="$PROJECT_DIR$/src/models/Article.java" />
+        <option value="$PROJECT_DIR$/src/controller/ClientsManager.java" />
+        <option value="$PROJECT_DIR$/src/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/workers/OutputWorker.java" />
+        <option value="$PROJECT_DIR$/src/builders/MessageBuilder.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1206" />
+    <option name="y" value="-23" />
+    <option name="width" value="1294" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="builders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="repos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="workers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29425287" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rat_g\Desktop\SD\Repos\sd-assignment-3-Drgx96\Server\src\java" />
+      <recent name="C:\Users\rat_g\Desktop\SD\Repos\sd-assignment-3-Drgx96\Server\src" />
+      <recent name="C:\Users\rat_g\Desktop\SD\Repos\sd-assignment-3-Drgx96\Server" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="messages" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controller" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="serverdemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ab1da69-9256-4df6-ae3e-711fd93ae62e" name="Default" comment="" />
+      <created>1524990664581</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524990664581</updated>
+      <workItem from="1524990668893" duration="279000" />
+      <workItem from="1524993083256" duration="574000" />
+      <workItem from="1524994831374" duration="713000" />
+      <workItem from="1524995589577" duration="22021000" />
+      <workItem from="1525197845042" duration="3692000" />
+      <workItem from="1525202763765" duration="1585000" />
+      <workItem from="1525323929449" duration="2375000" />
+      <workItem from="1525337661189" duration="439000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31678000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5086072" side_tool="true" visible="true" weight="0.3780359" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4913928" weight="0.3816631" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32942432" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12460937" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4968701" weight="0.3944563" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49374023" weight="0.32622603" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32942432" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49921754" weight="0.32942432" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Build" order="12" weight="0.32942432" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32629356" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12460937" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978677" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="35" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="clientThreads.get(0).isAlive()" language="JAVA" />
+        <watch expression="ListArticlesRequest.class.getName()" language="JAVA" custom="messages.ListArticlesRequest" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>ListArticlesRequest.class.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>messages.ListArticlesRequest</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>clientThreads.get(0).isAlive()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>clientThreads</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>adminRepo.getAdmins()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>messageBuilder.build()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>jsonString.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>in.readLine()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>jsonString</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new Gson().fromJson(jsonString.toString(), classOfMessage)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ListArticlesRequest.class</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>messages.ListArticlesRequest</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>classOfMessage</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Class.forName(&quot;messages.&quot;+ className).getDeclaringClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ClientController#0;class#ClientController#0" />
+            <element signature="method#run#0;class#ClientController#0" />
+            <element signature="method#update#0;class#ClientController#0" />
+            <element signature="method#handleMessage#0;class#ClientController#0" />
+            <element signature="method#handleMessage#1;class#ClientController#0" />
+            <element signature="method#handleMessage#2;class#ClientController#0" />
+            <element signature="method#handleMessage#3;class#ClientController#0" />
+            <element signature="method#handleMessage#4;class#ClientController#0" />
+            <element signature="method#handleMessage#5;class#ClientController#0" />
+            <element signature="method#stopIt#0;class#ClientController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ClientController#0;class#ClientController#0" />
+            <element signature="method#run#0;class#ClientController#0" />
+            <element signature="method#update#0;class#ClientController#0" />
+            <element signature="method#handleMessage#0;class#ClientController#0" />
+            <element signature="method#handleMessage#1;class#ClientController#0" />
+            <element signature="method#handleMessage#2;class#ClientController#0" />
+            <element signature="method#handleMessage#3;class#ClientController#0" />
+            <element signature="method#handleMessage#4;class#ClientController#0" />
+            <element signature="method#handleMessage#5;class#ClientController#0" />
+            <element signature="method#stopIt#0;class#ClientController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ArticlesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ClientsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ClientsManager#0;class#ClientsManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repos/ArticleRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main.class" />
+    <entry file="file://$PROJECT_DIR$/src/Model.java" />
+    <entry file="file://$PROJECT_DIR$/src/ArticlesJsonSerializer.java" />
+    <entry file="file://$PROJECT_DIR$/src/MessageHandler.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/stream/ReferencePipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="510" selection-start-line="510" selection-end-line="510" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="281" column="30" selection-start-line="281" selection-start-column="30" selection-end-line="281" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/net/DualStackPlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="290" column="22" selection-start-line="290" selection-start-column="22" selection-end-line="290" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.5/7f93f92d7ff619c1a49b5442ba77c0c297a88019/jackson-databind-2.9.5-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="290" selection-start-line="290" selection-end-line="290" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/SocketServer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>SocketServer</OriginalElement>
+          <nodes>
+            <node x="" y="">models.Admin</node>
+            <node x="" y="">SocketServer</node>
+            <node x="" y="">repos.AdminRepo</node>
+            <node x="" y="">workers.InputWorker</node>
+            <node x="" y="">messages.ListArticlesResponse</node>
+            <node x="" y="">workers.OutputWorker</node>
+            <node x="" y="">messages.Message</node>
+            <node x="" y="">models.Article</node>
+            <node x="" y="">repos.ArticleRepo</node>
+            <node x="" y="">controller.ClientsManager</node>
+            <node x="" y="">controller.ClientController</node>
+            <node x="" y="">messages.ListArticlesRequest</node>
+            <node x="" y="">services.ArticlesService</node>
+            <node x="" y="">builders.MessageBuilder</node>
+            <node x="" y="">services.AdminsService</node>
+            <node x="" y="">Main</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9647058823529412" x="1060.0" y="282.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/2.12.3/c9c84bac2eb0a681fa74f45b525711bd088696dc/mongo-java-driver-2.12.3-sources.jar!/com/mongodb/BasicDBObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/2.12.3/c9c84bac2eb0a681fa74f45b525711bd088696dc/mongo-java-driver-2.12.3-sources.jar!/org/bson/types/ObjectId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/DeleteArticleRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/AuthenticationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/InsertArticleRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/ListArticlesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/NotAuthenticatedResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/UpdateArticleRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="403" column="7" lean-forward="true" selection-start-line="403" selection-start-column="7" selection-end-line="403" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="69" lean-forward="true" selection-start-line="13" selection-start-column="69" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/2.12.3/c9c84bac2eb0a681fa74f45b525711bd088696dc/mongo-java-driver-2.12.3-sources.jar!/com/mongodb/DBCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="237" column="23" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repos/ArticleRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/ListArticlesRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Article#0;class#Article#0" />
+            <element signature="method#Article#1;class#Article#0" />
+            <element signature="method#Article#2;class#Article#0" />
+            <element signature="method#toDBObject#0;class#Article#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repos/AdminRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getAdmins#0;class#AdminRepo#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/AdminsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="method#validateCridentials#0;class#AdminsService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ArticlesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/workers/InputWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#InputWorker#0;class#InputWorker#0" />
+            <element signature="method#run#0;class#InputWorker#0" />
+            <element signature="method#receiveMessage#0;class#InputWorker#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/workers/OutputWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#OutputWorker#0;class#OutputWorker#0" />
+            <element signature="method#run#0;class#OutputWorker#0" />
+            <element signature="method#sendMessage#0;class#OutputWorker#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ClientsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ClientsManager#0;class#ClientsManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/builders/MessageBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/workers/SocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ClientController#0;class#ClientController#0" />
+            <element signature="method#run#0;class#ClientController#0" />
+            <element signature="method#update#0;class#ClientController#0" />
+            <element signature="method#handleMessage#0;class#ClientController#0" />
+            <element signature="method#handleMessage#1;class#ClientController#0" />
+            <element signature="method#handleMessage#2;class#ClientController#0" />
+            <element signature="method#handleMessage#3;class#ClientController#0" />
+            <element signature="method#handleMessage#4;class#ClientController#0" />
+            <element signature="method#handleMessage#5;class#ClientController#0" />
+            <element signature="method#stopIt#0;class#ClientController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/models.Admin">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>models.Admin</OriginalElement>
+          <nodes>
+            <node x="256.45833333333337" y="0.0">java.util.Observer</node>
+            <node x="715.16733276644" y="0.0">models.Admin</node>
+            <node x="701.125" y="80.0">repos.AdminRepo</node>
+            <node x="534.4411422902496" y="220.0">workers.InputWorker</node>
+            <node x="390.44114229024956" y="220.0">workers.OutputWorker</node>
+            <node x="572.125" y="80.0">messages.Message</node>
+            <node x="69.98886054421774" y="0.0">models.Article</node>
+            <node x="424.79166666666674" y="440.0">controller.ClientsManager</node>
+            <node x="7.833333333333371" y="80.0">repos.ArticleRepo</node>
+            <node x="424.29166666666674" y="350.0">controller.ClientController</node>
+            <node x="412.3715277777777" y="80.0">java.lang.Thread</node>
+            <node x="65.33333333333337" y="220.0">services.ArticlesService</node>
+            <node x="672.625" y="220.0">services.AdminsService</node>
+            <node x="413.16666666666674" y="520.0">workers.SocketServer</node>
+            <node x="230.33333333333337" y="80.0">java.util.Observable</node>
+            <node x="461.91666666666674" y="610.0">Main</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="workers.InputWorker" target="controller.ClientController">
+              <point x="42.75" y="15.0" />
+              <point x="634.1911422902496" y="300.0" />
+              <point x="525.4916666666668" y="300.0" />
+              <point x="35.19999999999999" y="-15.0" />
+            </edge>
+            <edge source="java.util.Observer" target="java.util.Observable">
+              <point x="11.875" y="15.0" />
+              <point x="315.83333333333337" y="55.0" />
+              <point x="319.5" y="55.0" />
+              <point x="35.66666666666663" y="-15.0" />
+            </edge>
+            <edge source="workers.OutputWorker" target="controller.ClientController">
+              <point x="41.33333333333334" y="15.0" />
+              <point x="493.77447562358293" y="330.0" />
+              <point x="490.29166666666674" y="330.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="controller.ClientController" target="services.AdminsService">
+              <point x="52.80000000000001" y="-15.0" />
+              <point x="543.0916666666667" y="320.0" />
+              <point x="685.225" y="320.0" />
+              <point x="-50.4" y="15.0" />
+            </edge>
+            <edge source="controller.ClientController" target="workers.InputWorker">
+              <point x="17.600000000000023" y="-15.0" />
+              <point x="507.89166666666677" y="280.0" />
+              <point x="577.1911422902496" y="280.0" />
+              <point x="-14.25" y="15.0" />
+            </edge>
+            <edge source="controller.ClientController" target="messages.Message">
+              <point x="44.0" y="-15.0" />
+              <point x="534.2916666666667" y="310.0" />
+              <point x="662.125" y="310.0" />
+              <point x="662.125" y="200.0" />
+              <point x="654.375" y="200.0" />
+              <point x="35.25" y="15.0" />
+            </edge>
+            <edge source="java.util.Observable" target="java.util.Observable">
+              <point x="-40.125" y="15.0" />
+              <point x="243.70833333333337" y="130.0" />
+              <point x="210.33333333333337" y="130.0" />
+              <point x="210.33333333333337" y="95.0" />
+              <point x="-53.5" y="-0.0" />
+            </edge>
+            <edge source="Main" target="services.AdminsService">
+              <point x="21.428571428571445" y="-15.0" />
+              <point x="520.8452380952382" y="580.0" />
+              <point x="774.8339994331068" y="580.0" />
+              <point x="774.8339994331068" y="330.0" />
+              <point x="786.0250000000001" y="330.0" />
+              <point x="50.400000000000034" y="15.0" />
+            </edge>
+            <edge source="controller.ClientController" target="models.Article">
+              <point x="-44.0" y="-15.0" />
+              <point x="446.29166666666674" y="310.0" />
+              <point x="199.83333333333337" y="310.0" />
+              <point x="199.83333333333337" y="55.0" />
+              <point x="141.73886054421774" y="55.0" />
+              <point x="30.75" y="15.0" />
+            </edge>
+            <edge source="workers.OutputWorker" target="messages.Message">
+              <point x="15.499999999999972" y="-15.0" />
+              <point x="467.94114229024956" y="190.0" />
+              <point x="583.875" y="190.0" />
+              <point x="-35.25" y="15.0" />
+            </edge>
+            <edge source="controller.ClientsManager" target="controller.ClientController">
+              <point x="18.714285714285722" y="-15.0" />
+              <point x="509.00595238095246" y="400.0" />
+              <point x="534.2916666666667" y="400.0" />
+              <point x="44.0" y="15.0" />
+            </edge>
+            <edge source="controller.ClientController" target="java.util.Observer">
+              <point x="-26.399999999999977" y="-15.0" />
+              <point x="463.89166666666677" y="290.0" />
+              <point x="347.83333333333337" y="290.0" />
+              <point x="347.83333333333337" y="55.0" />
+              <point x="339.58333333333337" y="55.0" />
+              <point x="35.625" y="15.0" />
+            </edge>
+            <edge source="controller.ClientsManager" target="services.AdminsService">
+              <point x="56.14285714285717" y="-15.0" />
+              <point x="546.4345238095239" y="420.0" />
+              <point x="760.825" y="420.0" />
+              <point x="25.19999999999999" y="15.0" />
+            </edge>
+            <edge source="repos.AdminRepo" target="models.Admin">
+              <point x="-27.75" y="-15.0" />
+              <point x="728.875" y="55.0" />
+              <point x="736.16733276644" y="55.0" />
+              <point x="-21.0" y="15.0" />
+            </edge>
+            <edge source="Main" target="controller.ClientsManager">
+              <point x="10.714285714285722" y="-15.0" />
+              <point x="510.13095238095246" y="570.0" />
+              <point x="538.6666666666667" y="570.0" />
+              <point x="538.6666666666667" y="495.0" />
+              <point x="533.9583333333334" y="495.0" />
+              <point x="43.66666666666663" y="15.0" />
+            </edge>
+            <edge source="controller.ClientController" target="workers.OutputWorker">
+              <point x="-17.599999999999966" y="-15.0" />
+              <point x="472.6916666666668" y="280.0" />
+              <point x="411.1078089569162" y="280.0" />
+              <point x="-41.33333333333334" y="15.0" />
+            </edge>
+            <edge source="Main" target="services.ArticlesService">
+              <point x="-21.428571428571445" y="-15.0" />
+              <point x="477.9880952380953" y="580.0" />
+              <point x="85.67867063492059" y="580.0" />
+              <point x="84.42867063492059" y="236.25" />
+              <point x="77.73333333333335" y="240.0" />
+              <point x="-49.60000000000002" y="15.0" />
+            </edge>
+            <edge source="services.ArticlesService" target="repos.ArticleRepo">
+              <point x="-49.60000000000002" y="-15.0" />
+              <point x="77.73333333333335" y="200.0" />
+              <point x="62.33333333333337" y="200.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="workers.OutputWorker" target="java.lang.Thread">
+              <point x="-46.50000000000003" y="-15.0" />
+              <point x="405.94114229024956" y="170.0" />
+              <point x="461.9548611111111" y="170.0" />
+              <point x="7.083333333333343" y="15.0" />
+            </edge>
+            <edge source="workers.InputWorker" target="messages.Message">
+              <point x="28.5" y="-15.0" />
+              <point x="619.9411422902496" y="200.0" />
+              <point x="630.875" y="200.0" />
+              <point x="11.75" y="15.0" />
+            </edge>
+            <edge source="services.AdminsService" target="repos.AdminRepo">
+              <point x="-31.5" y="-15.0" />
+              <point x="704.125" y="200.0" />
+              <point x="719.625" y="200.0" />
+              <point x="-37.0" y="15.0" />
+            </edge>
+            <edge source="controller.ClientsManager" target="services.ArticlesService">
+              <point x="-37.42857142857139" y="-15.0" />
+              <point x="452.86309523809535" y="410.0" />
+              <point x="129.78333333333336" y="407.5" />
+              <point x="123.53333333333336" y="236.25" />
+              <point x="132.33333333333337" y="233.75" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="workers.InputWorker" target="java.lang.Thread">
+              <point x="-28.5" y="-15.0" />
+              <point x="562.9411422902496" y="180.0" />
+              <point x="490.28819444444446" y="180.0" />
+              <point x="35.416666666666714" y="15.0" />
+            </edge>
+            <edge source="controller.ClientController" target="services.ArticlesService">
+              <point x="-61.599999999999966" y="-15.0" />
+              <point x="428.6916666666668" y="330.0" />
+              <point x="152.13333333333333" y="330.0" />
+              <point x="24.799999999999955" y="15.0" />
+            </edge>
+            <edge source="Main" target="workers.SocketServer">
+              <point x="-10.714285714285722" y="-15.0" />
+              <point x="488.702380952381" y="570.0" />
+              <point x="441.91666666666674" y="570.0" />
+              <point x="-28.75" y="15.0" />
+            </edge>
+            <edge source="services.ArticlesService" target="java.util.Observable">
+              <point x="24.799999999999955" y="-15.0" />
+              <point x="152.13333333333333" y="190.0" />
+              <point x="270.45833333333337" y="190.0" />
+              <point x="-13.375" y="15.0" />
+            </edge>
+            <edge source="java.util.Observable" target="java.util.Observer">
+              <point x="0.0" y="-15.0" />
+              <point x="283.83333333333337" y="55.0" />
+              <point x="292.08333333333337" y="55.0" />
+              <point x="-11.875" y="15.0" />
+            </edge>
+            <edge source="Main" target="repos.ArticleRepo">
+              <point x="-32.14285714285717" y="-15.0" />
+              <point x="467.2738095238096" y="590.0" />
+              <point x="26.0" y="590.0" />
+              <point x="-36.33333333333337" y="15.0" />
+            </edge>
+            <edge source="workers.SocketServer" target="controller.ClientsManager">
+              <point x="28.75" y="-15.0" />
+              <point x="499.41666666666674" y="495.0" />
+              <point x="490.29166666666674" y="495.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="services.ArticlesService" target="models.Article">
+              <point x="0.0" y="-15.0" />
+              <point x="127.33333333333337" y="55.0" />
+              <point x="121.23886054421774" y="55.0" />
+              <point x="10.25" y="15.0" />
+            </edge>
+            <edge source="java.lang.Thread" target="java.lang.Thread">
+              <point x="-21.25" y="15.0" />
+              <point x="433.6215277777777" y="140.0" />
+              <point x="382.3715277777777" y="140.0" />
+              <point x="382.3715277777777" y="95.0" />
+              <point x="-42.5" y="-0.0" />
+            </edge>
+            <edge source="controller.ClientController" target="java.util.Observable">
+              <point x="-35.19999999999999" y="-15.0" />
+              <point x="455.09166666666675" y="300.0" />
+              <point x="306.35364229024947" y="300.0" />
+              <point x="306.35364229024947" y="200.0" />
+              <point x="323.95833333333337" y="200.0" />
+              <point x="40.125" y="15.0" />
+            </edge>
+            <edge source="Main" target="repos.AdminRepo">
+              <point x="32.14285714285711" y="-15.0" />
+              <point x="531.5595238095239" y="590.0" />
+              <point x="809.125" y="590.0" />
+              <point x="809.125" y="200.0" />
+              <point x="793.625" y="200.0" />
+              <point x="37.0" y="15.0" />
+            </edge>
+            <edge source="repos.ArticleRepo" target="models.Article">
+              <point x="27.25" y="-15.0" />
+              <point x="89.58333333333337" y="55.0" />
+              <point x="100.73886054421774" y="55.0" />
+              <point x="-10.25" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8" x="138.12499999999977" y="313.125" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.47241378" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.47241378" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29425287" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29425287" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>serverdemo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.47241378" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
